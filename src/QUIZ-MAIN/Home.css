@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.quiz-question{
+    margin:20px;
+}
+body{
+   background-color: rgba(0,0,0,0.9);
+}
+.quiz-con{
+    padding: 10px;
+    background: white;
+   text-align: center;
+height: 80vh;
+  
+}
+.quiz-body{
+    height: 85vh;
+    width: 80vw;
+    background-color: lightblue;
+    box-shadow: 2px 2px 10px 2px black;
+}
+.quiz-body h3{
+    text-align: center;
+    font-size: 2rem;
+}
+.quiz-con .quiz-question{
+    padding:40px 0;
+    color: brown;
+    font-size: 2rem;
+}
+.quiz-id{
+ font-weight: bold;
+    top:18%;
+  background: rgba(0,155,200,0.3);
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+}
+.quiz-mark{
+    font-weight: bold;
+    top:19%;
+    right:10%;
+  background: rgba(0,5,200,0.3);
+    position: absolute;
+    padding: 10px;
+    border-radius: 20px;
+}
+ul li{
+    list-style-type: none;
+    background: rgba(0,0,0,0.3);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+ul li:hover{
+    /* background-color: grey; */
+    color: white;
+    cursor: pointer;
+}
+
+ul li { 
+   
+    font-size: 1.3rem;
+    color:firebrick;
+    text-transform: uppercase;
+   
+}
+.quiz-btn{
+    margin-top: 20px;
+}
+.quiz-btn button{
+    font-size: 1rem;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+}
+.quiz-btn button:hover{
+    cursor: pointer;
+    background-color: lightcoral;
+}
+.correct{
+    background-color: green;
+    color: white;
+    
+}
+.wrong{
+    background-color: red;
+    color: white;
+}
+.question-indicator{
+    margin-top: 20px;
+    left:50%;
+ 
+    transform: translate(-50%);
+    position: absolute;
+    max-width:400px;
+   background: rgba(0,0,0,0.1);
+    display: flex;
+    /* overflow-x: scroll; */
+    border-radius: 20px;
+}
+.question-indicator:hover{
+    cursor: pointer;
+}
+.question-indicator div{
+    color: white;
+   padding: 5px 10px;
+    border-radius: 100%;
+    font-size: 1rem;
+    background: black;
+    margin: 10px;
+
+}
+.question-indicator div:hover{
+    cursor:pointer;
+}
+.start-btn{
+    left:50%;
+    top:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    background-color: lightcoral;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    outline:none;
+    border: none;
+}
+.start-btn:hover{
+    
+    cursor: pointer;
+    box-shadow:2px 2px 10px 10px grey,2px 2px 10px 10px white;
+    border: 2px solid brown;
+    transition: all 0.2s ease-in-out;
+}
+.report{
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: 0px 0px 5px 0px  black;
+    background-color: white;
+    padding:10px;
+    width: 300px;
+}
+.quiz-res{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+table tr th{
+    padding:5px;
+}
+table tr td{
+    text-align: center;
+}
+
+
+::-webkit-scrollbar{
+    width:2px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 6px;
+   
+}
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+
+
+@keyframes slide{
+    from{left:-100%;position: absolute;}
+ 
+}
